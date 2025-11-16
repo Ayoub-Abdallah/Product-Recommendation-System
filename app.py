@@ -50,3 +50,8 @@ def index(request: Request):
 def sample_conversations():
     with open('data/conversations.json', 'r') as f:
         return json.load(f)
+
+@app.get("/stats")
+def get_stats():
+    """Get recommendation system statistics"""
+    return recommender.get_stats()
