@@ -1,0 +1,1215 @@
+[
+  {
+    "id": "hind-001",
+    "name": "Niacinamide Serum 10% + Zinc 1%",
+    "name_ar": "سيروم نياسيناميد 10% + زنك 1%",
+    "name_fr": "Sérum Niacinamide 10% + Zinc 1%",
+    "price": 2500,
+    "currency": "DA",
+    "category": "skin_care",
+    "subcategory": "serum",
+    "image": "https://example.com/niacinamide-serum.jpg",
+    "tags": [
+      "oily_skin",
+      "acne",
+      "sebum_control",
+      "pores",
+      "brightening"
+    ],
+    "skin_types": [
+      "oily",
+      "combination",
+      "acne_prone"
+    ],
+    "hair_types": [],
+    "problems_solved": [
+      "oily_skin_acne",
+      "large_pores",
+      "hyperpigmentation"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "medium",
+    "description": "Controls sebum production, reduces acne and minimizes pores",
+    "description_ar": "يتحكم في إنتاج الدهون، يقلل من حب الشباب ويقلص المسام",
+    "description_fr": "Contrôle la production de sébum, réduit l'acné et minimise les pores",
+    "ingredients": [
+      "niacinamide",
+      "zinc",
+      "hyaluronic_acid"
+    ],
+    "stock": 50,
+    "popularity": 0.9,
+    "recency": 0.8,
+    "personal": 0.0,
+    "seller_boost": 0.2
+  },
+  {
+    "id": "hind-002",
+    "name": "Hyaluronic Acid Hydrating Serum",
+    "name_ar": "سيروم حمض الهيالورونيك المرطب",
+    "name_fr": "Sérum Hydratant à l'Acide Hyaluronique",
+    "price": 2800,
+    "currency": "DA",
+    "category": "skin_care",
+    "subcategory": "serum",
+    "image": "https://example.com/hyaluronic-serum.jpg",
+    "tags": [
+      "dry_skin",
+      "hydration",
+      "anti_aging",
+      "plumping"
+    ],
+    "skin_types": [
+      "dry",
+      "normal",
+      "sensitive"
+    ],
+    "hair_types": [],
+    "problems_solved": [
+      "dry_skin",
+      "fine_lines",
+      "dehydration"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "medium",
+    "description": "Deeply hydrates and plumps skin, reduces fine lines",
+    "description_ar": "يرطب البشرة بعمق ويملأها، يقلل من الخطوط الدقيقة",
+    "description_fr": "Hydrate en profondeur et repulpe la peau, réduit les ridules",
+    "ingredients": [
+      "hyaluronic_acid",
+      "vitamin_b5",
+      "glycerin"
+    ],
+    "stock": 45,
+    "popularity": 0.85,
+    "recency": 0.7,
+    "personal": 0.0,
+    "seller_boost": 0.15
+  },
+  {
+    "id": "hind-003",
+    "name": "Salicylic Acid 2% Acne Treatment",
+    "name_ar": "علاج حب الشباب بحمض الساليسيليك 2%",
+    "name_fr": "Traitement Anti-Acné à l'Acide Salicylique 2%",
+    "price": 2200,
+    "currency": "DA",
+    "category": "skin_care",
+    "subcategory": "treatment",
+    "image": "https://example.com/salicylic-acid.jpg",
+    "tags": [
+      "acne",
+      "oily_skin",
+      "blackheads",
+      "exfoliation",
+      "blemishes"
+    ],
+    "skin_types": [
+      "oily",
+      "combination",
+      "acne_prone"
+    ],
+    "hair_types": [],
+    "problems_solved": [
+      "oily_skin_acne",
+      "blackheads",
+      "blemishes"
+    ],
+    "age_range": [
+      "teens",
+      "20-30",
+      "30-40"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "low",
+    "description": "Unclogs pores, treats acne and prevents breakouts",
+    "description_ar": "يفتح المسام، يعالج حب الشباب ويمنع ظهوره",
+    "description_fr": "Débouche les pores, traite l'acné et prévient les éruptions",
+    "ingredients": [
+      "salicylic_acid",
+      "witch_hazel",
+      "tea_tree_oil"
+    ],
+    "stock": 60,
+    "popularity": 0.92,
+    "recency": 0.9,
+    "personal": 0.0,
+    "seller_boost": 0.25
+  },
+  {
+    "id": "hind-004",
+    "name": "Vitamin C Brightening Serum 15%",
+    "name_ar": "سيروم فيتامين سي المشرق 15%",
+    "name_fr": "Sérum Éclaircissant à la Vitamine C 15%",
+    "price": 3200,
+    "currency": "DA",
+    "category": "skin_care",
+    "subcategory": "serum",
+    "image": "https://example.com/vitamin-c-serum.jpg",
+    "tags": [
+      "brightening",
+      "dark_spots",
+      "anti_aging",
+      "dull_skin"
+    ],
+    "skin_types": [
+      "all",
+      "normal",
+      "combination",
+      "dry"
+    ],
+    "hair_types": [],
+    "problems_solved": [
+      "hyperpigmentation",
+      "dark_spots",
+      "dull_skin"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "high",
+    "description": "Brightens skin, fades dark spots and boosts collagen",
+    "description_ar": "يفتح البشرة، يزيل البقع الداكنة ويعزز الكولاجين",
+    "description_fr": "Éclaircit la peau, estompe les taches brunes et stimule le collagène",
+    "ingredients": [
+      "vitamin_c",
+      "vitamin_e",
+      "ferulic_acid"
+    ],
+    "stock": 35,
+    "popularity": 0.88,
+    "recency": 0.85,
+    "personal": 0.0,
+    "seller_boost": 0.2
+  },
+  {
+    "id": "hind-005",
+    "name": "Retinol Night Cream 0.5%",
+    "name_ar": "كريم ليلي بالريتينول 0.5%",
+    "name_fr": "Crème de Nuit au Rétinol 0.5%",
+    "price": 3500,
+    "currency": "DA",
+    "category": "skin_care",
+    "subcategory": "moisturizer",
+    "image": "https://example.com/retinol-cream.jpg",
+    "tags": [
+      "anti_aging",
+      "wrinkles",
+      "fine_lines",
+      "texture"
+    ],
+    "skin_types": [
+      "normal",
+      "dry",
+      "combination"
+    ],
+    "hair_types": [],
+    "problems_solved": [
+      "wrinkles",
+      "fine_lines",
+      "aging_skin",
+      "texture"
+    ],
+    "age_range": [
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "high",
+    "description": "Reduces wrinkles, improves skin texture and promotes cell renewal",
+    "description_ar": "يقلل التجاعيد، يحسن ملمس البشرة ويعزز تجديد الخلايا",
+    "description_fr": "Réduit les rides, améliore la texture de la peau et favorise le renouvellement cellulaire",
+    "ingredients": [
+      "retinol",
+      "peptides",
+      "ceramides",
+      "squalane"
+    ],
+    "stock": 30,
+    "popularity": 0.87,
+    "recency": 0.75,
+    "personal": 0.0,
+    "seller_boost": 0.18
+  },
+  {
+    "id": "hind-006",
+    "name": "Gentle Foaming Cleanser",
+    "name_ar": "منظف رغوي لطيف",
+    "name_fr": "Nettoyant Moussant Doux",
+    "price": 1800,
+    "currency": "DA",
+    "category": "skin_care",
+    "subcategory": "cleanser",
+    "image": "https://example.com/gentle-cleanser.jpg",
+    "tags": [
+      "cleanser",
+      "gentle",
+      "daily_use",
+      "sensitive_skin"
+    ],
+    "skin_types": [
+      "all",
+      "sensitive",
+      "normal",
+      "dry"
+    ],
+    "hair_types": [],
+    "problems_solved": [
+      "daily_cleansing",
+      "sensitive_skin",
+      "makeup_removal"
+    ],
+    "age_range": [
+      "all"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "low",
+    "description": "Gentle daily cleanser for all skin types, removes impurities",
+    "description_ar": "منظف يومي لطيف لجميع أنواع البشرة، يزيل الشوائب",
+    "description_fr": "Nettoyant quotidien doux pour tous types de peaux, élimine les impuretés",
+    "ingredients": [
+      "glycerin",
+      "ceramides",
+      "niacinamide"
+    ],
+    "stock": 70,
+    "popularity": 0.9,
+    "recency": 0.6,
+    "personal": 0.0,
+    "seller_boost": 0.1
+  },
+  {
+    "id": "hind-007",
+    "name": "Argan Oil Hair Treatment",
+    "name_ar": "علاج الشعر بزيت الأرغان",
+    "name_fr": "Traitement Capillaire à l'Huile d'Argan",
+    "price": 2400,
+    "currency": "DA",
+    "category": "hair_care",
+    "subcategory": "treatment",
+    "image": "https://example.com/argan-oil.jpg",
+    "tags": [
+      "hair_care",
+      "dry_hair",
+      "frizz",
+      "shine",
+      "repair"
+    ],
+    "skin_types": [],
+    "hair_types": [
+      "dry",
+      "damaged",
+      "curly",
+      "frizzy"
+    ],
+    "problems_solved": [
+      "dry_hair",
+      "frizz",
+      "split_ends",
+      "damage"
+    ],
+    "age_range": [
+      "all"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "medium",
+    "description": "Nourishes and repairs dry, damaged hair, adds shine",
+    "description_ar": "يغذي ويصلح الشعر الجاف والتالف، يضيف لمعانًا",
+    "description_fr": "Nourrit et répare les cheveux secs et abîmés, ajoute de la brillance",
+    "ingredients": [
+      "argan_oil",
+      "vitamin_e",
+      "omega_fatty_acids"
+    ],
+    "stock": 55,
+    "popularity": 0.86,
+    "recency": 0.7,
+    "personal": 0.0,
+    "seller_boost": 0.15
+  },
+  {
+    "id": "hind-008",
+    "name": "Anti-Dandruff Shampoo with Zinc",
+    "name_ar": "شامبو مضاد للقشرة مع الزنك",
+    "name_fr": "Shampooing Anti-Pelliculaire au Zinc",
+    "price": 2100,
+    "currency": "DA",
+    "category": "hair_care",
+    "subcategory": "shampoo",
+    "image": "https://example.com/anti-dandruff.jpg",
+    "tags": [
+      "dandruff",
+      "scalp_care",
+      "itchy_scalp",
+      "flakes"
+    ],
+    "skin_types": [],
+    "hair_types": [
+      "all",
+      "oily_scalp",
+      "dry_scalp"
+    ],
+    "problems_solved": [
+      "dandruff",
+      "itchy_scalp",
+      "flaky_scalp"
+    ],
+    "age_range": [
+      "all"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "low",
+    "description": "Effectively treats dandruff and soothes itchy scalp",
+    "description_ar": "يعالج القشرة بفعالية ويهدئ فروة الرأس المتهيجة",
+    "description_fr": "Traite efficacement les pellicules et apaise le cuir chevelu irrité",
+    "ingredients": [
+      "zinc_pyrithione",
+      "tea_tree_oil",
+      "salicylic_acid"
+    ],
+    "stock": 65,
+    "popularity": 0.84,
+    "recency": 0.65,
+    "personal": 0.0,
+    "seller_boost": 0.12
+  },
+  {
+    "id": "hind-009",
+    "name": "SPF 50 Sunscreen Gel",
+    "name_ar": "جل واقي من الشمس SPF 50",
+    "name_fr": "Gel Solaire SPF 50",
+    "price": 2600,
+    "currency": "DA",
+    "category": "skin_care",
+    "subcategory": "sunscreen",
+    "image": "https://example.com/sunscreen.jpg",
+    "tags": [
+      "sun_protection",
+      "spf",
+      "daily_use",
+      "non_greasy"
+    ],
+    "skin_types": [
+      "all",
+      "oily",
+      "combination"
+    ],
+    "hair_types": [],
+    "problems_solved": [
+      "sun_damage",
+      "hyperpigmentation",
+      "aging"
+    ],
+    "age_range": [
+      "all"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "medium",
+    "description": "Broad spectrum protection, lightweight and non-greasy",
+    "description_ar": "حماية واسعة الطيف، خفيف وغير دهني",
+    "description_fr": "Protection large spectre, léger et non gras",
+    "ingredients": [
+      "zinc_oxide",
+      "titanium_dioxide",
+      "niacinamide"
+    ],
+    "stock": 80,
+    "popularity": 0.95,
+    "recency": 0.9,
+    "personal": 0.0,
+    "seller_boost": 0.2
+  },
+  {
+    "id": "hind-010",
+    "name": "Caffeine Eye Cream for Dark Circles",
+    "name_ar": "كريم العين بالكافيين للهالات السوداء",
+    "name_fr": "Crème pour les Yeux à la Caféine contre les Cernes",
+    "price": 2300,
+    "currency": "DA",
+    "category": "skin_care",
+    "subcategory": "eye_care",
+    "image": "https://example.com/eye-cream.jpg",
+    "tags": [
+      "dark_circles",
+      "puffiness",
+      "eye_bags",
+      "brightening"
+    ],
+    "skin_types": [
+      "all"
+    ],
+    "hair_types": [],
+    "problems_solved": [
+      "dark_circles",
+      "puffiness",
+      "tired_eyes"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "medium",
+    "description": "Reduces dark circles and puffiness, brightens under-eye area",
+    "description_ar": "يقلل الهالات السوداء والانتفاخ، يفتح منطقة تحت العين",
+    "description_fr": "Réduit les cernes et les poches, éclaircit le contour des yeux",
+    "ingredients": [
+      "caffeine",
+      "vitamin_k",
+      "peptides",
+      "hyaluronic_acid"
+    ],
+    "stock": 40,
+    "popularity": 0.82,
+    "recency": 0.75,
+    "personal": 0.0,
+    "seller_boost": 0.15
+  },
+  {
+    "id": "supp-001",
+    "name": "Vitamin D3 5000 IU",
+    "name_ar": "فيتامين د3 5000 وحدة",
+    "name_fr": "Vitamine D3 5000 UI",
+    "price": 1800,
+    "currency": "DA",
+    "category": "supplements",
+    "subcategory": "vitamins",
+    "image": "https://example.com/vitamin-d3.jpg",
+    "tags": [
+      "immunity",
+      "bone_health",
+      "energy",
+      "mood"
+    ],
+    "skin_types": [],
+    "hair_types": [],
+    "problems_solved": [
+      "vitamin_deficiency",
+      "fatigue",
+      "weak_immunity"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "low",
+    "description": "Supports immune system, bone health, and mood",
+    "description_ar": "يدعم جهاز المناعة، صحة العظام والمزاج",
+    "description_fr": "Soutient le système immunitaire, la santé osseuse et l'humeur",
+    "ingredients": [
+      "vitamin_d3",
+      "olive_oil"
+    ],
+    "stock": 100,
+    "popularity": 0.85,
+    "recency": 0.9,
+    "personal": 0.0,
+    "seller_boost": 0.1
+  },
+  {
+    "id": "supp-002",
+    "name": "Biotin 10000 mcg Hair, Skin & Nails",
+    "name_ar": "بيوتين 10000 ميكروغرام للشعر والبشرة والأظافر",
+    "name_fr": "Biotine 10000 mcg Cheveux, Peau & Ongles",
+    "price": 2200,
+    "currency": "DA",
+    "category": "supplements",
+    "subcategory": "beauty_supplements",
+    "image": "https://example.com/biotin.jpg",
+    "tags": [
+      "hair_growth",
+      "nail_strength",
+      "skin_health",
+      "biotin"
+    ],
+    "skin_types": [
+      "all"
+    ],
+    "hair_types": [
+      "all"
+    ],
+    "problems_solved": [
+      "hair_loss",
+      "weak_nails",
+      "dull_skin"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "medium",
+    "description": "Promotes healthy hair growth, strong nails, and glowing skin",
+    "description_ar": "يعزز نمو الشعر الصحي، الأظافر القوية والبشرة المتوهجة",
+    "description_fr": "Favorise une croissance saine des cheveux, des ongles forts et une peau éclatante",
+    "ingredients": [
+      "biotin",
+      "vitamin_c",
+      "zinc"
+    ],
+    "stock": 80,
+    "popularity": 0.9,
+    "recency": 0.95,
+    "personal": 0.0,
+    "seller_boost": 0.2
+  },
+  {
+    "id": "supp-003",
+    "name": "Omega-3 Fish Oil 1000mg",
+    "name_ar": "زيت السمك أوميغا 3 1000 ملغ",
+    "name_fr": "Huile de Poisson Oméga-3 1000mg",
+    "price": 2500,
+    "currency": "DA",
+    "category": "supplements",
+    "subcategory": "essential_fatty_acids",
+    "image": "https://example.com/omega3.jpg",
+    "tags": [
+      "heart_health",
+      "brain_health",
+      "anti_inflammatory",
+      "omega3"
+    ],
+    "skin_types": [],
+    "hair_types": [],
+    "problems_solved": [
+      "inflammation",
+      "dry_skin",
+      "brain_fog"
+    ],
+    "age_range": [
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "medium",
+    "description": "Supports heart and brain health, reduces inflammation",
+    "description_ar": "يدعم صحة القلب والدماغ، يقلل الالتهابات",
+    "description_fr": "Soutient la santé cardiaque et cérébrale, réduit l'inflammation",
+    "ingredients": [
+      "epa",
+      "dha",
+      "omega3"
+    ],
+    "stock": 70,
+    "popularity": 0.8,
+    "recency": 0.7,
+    "personal": 0.0,
+    "seller_boost": 0.15
+  },
+  {
+    "id": "supp-004",
+    "name": "Collagen Peptides Powder",
+    "name_ar": "مسحوق ببتيدات الكولاجين",
+    "name_fr": "Poudre de Peptides de Collagène",
+    "price": 3500,
+    "currency": "DA",
+    "category": "supplements",
+    "subcategory": "beauty_supplements",
+    "image": "https://example.com/collagen.jpg",
+    "tags": [
+      "anti_aging",
+      "skin_elasticity",
+      "joint_health",
+      "collagen"
+    ],
+    "skin_types": [
+      "all"
+    ],
+    "hair_types": [],
+    "problems_solved": [
+      "wrinkles",
+      "fine_lines",
+      "sagging_skin",
+      "joint_pain"
+    ],
+    "age_range": [
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "high",
+    "description": "Improves skin elasticity, reduces wrinkles, supports joint health",
+    "description_ar": "يحسن مرونة البشرة، يقلل التجاعيد ويدعم صحة المفاصل",
+    "description_fr": "Améliore l'élasticité de la peau, réduit les rides, soutient la santé des articulations",
+    "ingredients": [
+      "collagen_peptides",
+      "vitamin_c",
+      "hyaluronic_acid"
+    ],
+    "stock": 60,
+    "popularity": 0.95,
+    "recency": 0.9,
+    "personal": 0.0,
+    "seller_boost": 0.25
+  },
+  {
+    "id": "supp-005",
+    "name": "Multivitamin Women's Formula",
+    "name_ar": "مكمل فيتامينات متعدد للنساء",
+    "name_fr": "Multivitamines Formule Femmes",
+    "price": 2800,
+    "currency": "DA",
+    "category": "supplements",
+    "subcategory": "multivitamins",
+    "image": "https://example.com/multivitamin-women.jpg",
+    "tags": [
+      "energy",
+      "immunity",
+      "beauty",
+      "womens_health"
+    ],
+    "skin_types": [],
+    "hair_types": [],
+    "problems_solved": [
+      "fatigue",
+      "weak_immunity",
+      "nutritional_deficiency"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female"
+    ],
+    "budget": "medium",
+    "description": "Complete daily nutrition for women's health and vitality",
+    "description_ar": "تغذية يومية كاملة لصحة وحيوية المرأة",
+    "description_fr": "Nutrition quotidienne complète pour la santé et la vitalité des femmes",
+    "ingredients": [
+      "vitamin_a",
+      "vitamin_c",
+      "vitamin_d",
+      "b_complex",
+      "iron",
+      "calcium"
+    ],
+    "stock": 90,
+    "popularity": 0.88,
+    "recency": 0.85,
+    "personal": 0.0,
+    "seller_boost": 0.18
+  },
+  {
+    "id": "well-001",
+    "name": "Melatonin 5mg Sleep Support",
+    "name_ar": "ميلاتونين 5 ملغ لدعم النوم",
+    "name_fr": "Mélatonine 5mg Soutien au Sommeil",
+    "price": 1500,
+    "currency": "DA",
+    "category": "wellness",
+    "subcategory": "sleep_support",
+    "image": "https://example.com/melatonin.jpg",
+    "tags": [
+      "sleep",
+      "relaxation",
+      "insomnia",
+      "circadian_rhythm"
+    ],
+    "skin_types": [],
+    "hair_types": [],
+    "problems_solved": [
+      "insomnia",
+      "jet_lag",
+      "sleep_disturbance"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "low",
+    "description": "Natural sleep aid, helps regulate sleep-wake cycle",
+    "description_ar": "مساعد طبيعي للنوم، يساعد في تنظيم دورة النوم والاستيقاظ",
+    "description_fr": "Aide naturelle au sommeil, aide à réguler le cycle veille-sommeil",
+    "ingredients": [
+      "melatonin"
+    ],
+    "stock": 120,
+    "popularity": 0.82,
+    "recency": 0.75,
+    "personal": 0.0,
+    "seller_boost": 0.12
+  },
+  {
+    "id": "well-002",
+    "name": "Probiotics 50 Billion CFU",
+    "name_ar": "بروبيوتيك 50 مليار وحدة",
+    "name_fr": "Probiotiques 50 Milliards UFC",
+    "price": 3200,
+    "currency": "DA",
+    "category": "wellness",
+    "subcategory": "digestive_health",
+    "image": "https://example.com/probiotics.jpg",
+    "tags": [
+      "gut_health",
+      "digestion",
+      "immunity",
+      "microbiome"
+    ],
+    "skin_types": [],
+    "hair_types": [],
+    "problems_solved": [
+      "digestive_issues",
+      "bloating",
+      "weak_immunity"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "high",
+    "description": "Supports digestive health, boosts immunity, balances gut flora",
+    "description_ar": "يدعم صحة الجهاز الهضمي، يعزز المناعة ويوازن فلورا الأمعاء",
+    "description_fr": "Soutient la santé digestive, renforce l'immunité, équilibre la flore intestinale",
+    "ingredients": [
+      "lactobacillus",
+      "bifidobacterium",
+      "prebiotic_fiber"
+    ],
+    "stock": 55,
+    "popularity": 0.87,
+    "recency": 0.88,
+    "personal": 0.0,
+    "seller_boost": 0.2
+  },
+  {
+    "id": "skin-011",
+    "name": "Glycolic Acid 7% Toning Solution",
+    "name_ar": "محلول تونر حمض الجليكوليك 7%",
+    "name_fr": "Solution Tonifiante Acide Glycolique 7%",
+    "price": 1900,
+    "currency": "DA",
+    "category": "skin_care",
+    "subcategory": "toner",
+    "image": "https://example.com/glycolic-toner.jpg",
+    "tags": [
+      "exfoliation",
+      "brightening",
+      "texture",
+      "anti_aging"
+    ],
+    "skin_types": [
+      "oily",
+      "combination",
+      "normal"
+    ],
+    "hair_types": [],
+    "problems_solved": [
+      "dull_skin",
+      "uneven_texture",
+      "hyperpigmentation"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "low",
+    "description": "Exfoliates dead skin cells, brightens and smooths skin texture",
+    "description_ar": "يقشر خلايا الجلد الميتة، يفتح وينعم نسيج البشرة",
+    "description_fr": "Exfolie les cellules mortes, éclaircit et lisse la texture de la peau",
+    "ingredients": [
+      "glycolic_acid",
+      "aloe_vera",
+      "ginseng"
+    ],
+    "stock": 65,
+    "popularity": 0.83,
+    "recency": 0.92,
+    "personal": 0.0,
+    "seller_boost": 0.15
+  },
+  {
+    "id": "skin-012",
+    "name": "Azelaic Acid 10% Suspension",
+    "name_ar": "معلق حمض الأزيليك 10%",
+    "name_fr": "Suspension d'Acide Azélaïque 10%",
+    "price": 2400,
+    "currency": "DA",
+    "category": "skin_care",
+    "subcategory": "treatment",
+    "image": "https://example.com/azelaic-acid.jpg",
+    "tags": [
+      "acne",
+      "rosacea",
+      "brightening",
+      "redness"
+    ],
+    "skin_types": [
+      "oily",
+      "sensitive",
+      "acne_prone"
+    ],
+    "hair_types": [],
+    "problems_solved": [
+      "acne",
+      "rosacea",
+      "hyperpigmentation",
+      "redness"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "medium",
+    "description": "Reduces acne, calms redness, brightens skin tone",
+    "description_ar": "يقلل حب الشباب، يهدئ الاحمرار ويفتح لون البشرة",
+    "description_fr": "Réduit l'acné, calme les rougeurs, éclaircit le teint",
+    "ingredients": [
+      "azelaic_acid"
+    ],
+    "stock": 48,
+    "popularity": 0.78,
+    "recency": 0.86,
+    "personal": 0.0,
+    "seller_boost": 0.14
+  },
+  {
+    "id": "skin-013",
+    "name": "Ceramide Repair Cream",
+    "name_ar": "كريم سيراميد للإصلاح",
+    "name_fr": "Crème Réparatrice aux Céramides",
+    "price": 3000,
+    "currency": "DA",
+    "category": "skin_care",
+    "subcategory": "moisturizer",
+    "image": "https://example.com/ceramide-cream.jpg",
+    "tags": [
+      "barrier_repair",
+      "dry_skin",
+      "sensitive",
+      "moisturizing"
+    ],
+    "skin_types": [
+      "dry",
+      "sensitive",
+      "normal"
+    ],
+    "hair_types": [],
+    "problems_solved": [
+      "dry_skin",
+      "damaged_barrier",
+      "sensitivity"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "medium",
+    "description": "Repairs skin barrier, deeply moisturizes, soothes irritation",
+    "description_ar": "يصلح حاجز البشرة، يرطب بعمق ويهدئ التهيج",
+    "description_fr": "Répare la barrière cutanée, hydrate en profondeur, apaise les irritations",
+    "ingredients": [
+      "ceramides",
+      "cholesterol",
+      "fatty_acids"
+    ],
+    "stock": 52,
+    "popularity": 0.89,
+    "recency": 0.84,
+    "personal": 0.0,
+    "seller_boost": 0.19
+  },
+  {
+    "id": "hair-007",
+    "name": "Argan Oil Hair Treatment",
+    "name_ar": "علاج زيت الأرغان للشعر",
+    "name_fr": "Traitement Capillaire à l'Huile d'Argan",
+    "price": 2200,
+    "currency": "DA",
+    "category": "hair_care",
+    "subcategory": "treatment",
+    "image": "https://example.com/argan-oil.jpg",
+    "tags": [
+      "hair_repair",
+      "shine",
+      "frizz_control",
+      "nourishing"
+    ],
+    "skin_types": [],
+    "hair_types": [
+      "dry",
+      "damaged",
+      "curly",
+      "wavy"
+    ],
+    "problems_solved": [
+      "dry_hair",
+      "frizz",
+      "split_ends",
+      "dull_hair"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "medium",
+    "description": "Deeply nourishes, adds shine, controls frizz",
+    "description_ar": "يغذي بعمق، يضيف لمعان ويتحكم بالتجعد",
+    "description_fr": "Nourrit en profondeur, ajoute de la brillance, contrôle les frisottis",
+    "ingredients": [
+      "argan_oil",
+      "vitamin_e"
+    ],
+    "stock": 58,
+    "popularity": 0.86,
+    "recency": 0.79,
+    "personal": 0.0,
+    "seller_boost": 0.16
+  },
+  {
+    "id": "hair-008",
+    "name": "Biotin & Collagen Shampoo",
+    "name_ar": "شامبو البيوتين والكولاجين",
+    "name_fr": "Shampooing Biotine & Collagène",
+    "price": 1600,
+    "currency": "DA",
+    "category": "hair_care",
+    "subcategory": "shampoo",
+    "image": "https://example.com/biotin-shampoo.jpg",
+    "tags": [
+      "hair_growth",
+      "volume",
+      "strengthening",
+      "thickening"
+    ],
+    "skin_types": [],
+    "hair_types": [
+      "thin",
+      "normal",
+      "all"
+    ],
+    "problems_solved": [
+      "hair_loss",
+      "thin_hair",
+      "weak_hair"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female",
+      "male",
+      "unisex"
+    ],
+    "budget": "low",
+    "description": "Promotes hair growth, adds volume, strengthens strands",
+    "description_ar": "يعزز نمو الشعر، يضيف حجم ويقوي الخصلات",
+    "description_fr": "Favorise la croissance des cheveux, ajoute du volume, renforce les mèches",
+    "ingredients": [
+      "biotin",
+      "collagen",
+      "keratin"
+    ],
+    "stock": 75,
+    "popularity": 0.84,
+    "recency": 0.91,
+    "personal": 0.0,
+    "seller_boost": 0.17
+  },
+  {
+    "id": "makeup-001",
+    "name": "Matte Foundation SPF 30",
+    "name_ar": "كريم أساس مات مع عامل حماية 30",
+    "name_fr": "Fond de Teint Mat FPS 30",
+    "price": 3500,
+    "currency": "DA",
+    "category": "makeup",
+    "subcategory": "foundation",
+    "image": "https://example.com/foundation.jpg",
+    "tags": [
+      "matte_finish",
+      "full_coverage",
+      "spf",
+      "long_lasting"
+    ],
+    "skin_types": [
+      "oily",
+      "combination"
+    ],
+    "hair_types": [],
+    "problems_solved": [
+      "oily_skin",
+      "large_pores",
+      "uneven_skin_tone"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40"
+    ],
+    "gender": [
+      "female"
+    ],
+    "budget": "high",
+    "description": "Full coverage matte foundation with SPF protection",
+    "description_ar": "كريم أساس مات بتغطية كاملة مع حماية من الشمس",
+    "description_fr": "Fond de teint mat à couverture complète avec protection SPF",
+    "ingredients": [
+      "titanium_dioxide",
+      "iron_oxides",
+      "silica"
+    ],
+    "stock": 40,
+    "popularity": 0.91,
+    "recency": 0.87,
+    "personal": 0.0,
+    "seller_boost": 0.22
+  },
+  {
+    "id": "makeup-002",
+    "name": "Vitamin C Brightening Serum Foundation",
+    "name_ar": "كريم أساس سيروم فيتامين سي المشرق",
+    "name_fr": "Fond de Teint Sérum Vitamine C Illuminateur",
+    "price": 4200,
+    "currency": "DA",
+    "category": "makeup",
+    "subcategory": "foundation",
+    "image": "https://example.com/serum-foundation.jpg",
+    "tags": [
+      "dewy_finish",
+      "brightening",
+      "skincare_makeup",
+      "vitamin_c"
+    ],
+    "skin_types": [
+      "dry",
+      "normal"
+    ],
+    "hair_types": [],
+    "problems_solved": [
+      "dull_skin",
+      "dry_skin",
+      "uneven_skin_tone"
+    ],
+    "age_range": [
+      "20-30",
+      "30-40",
+      "40+"
+    ],
+    "gender": [
+      "female"
+    ],
+    "budget": "high",
+    "description": "Hybrid serum foundation with vitamin C for glowing skin",
+    "description_ar": "كريم أساس سيروم مع فيتامين سي للبشرة المتوهجة",
+    "description_fr": "Fond de teint sérum hybride avec vitamine C pour une peau éclatante",
+    "ingredients": [
+      "vitamin_c",
+      "hyaluronic_acid",
+      "niacinamide"
+    ],
+    "stock": 35,
+    "popularity": 0.88,
+    "recency": 0.94,
+    "personal": 0.0,
+    "seller_boost": 0.24
+  }
+]

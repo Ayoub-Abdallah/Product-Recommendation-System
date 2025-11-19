@@ -6,3 +6,5 @@ scikit-learn
 pydantic
 jinja2
 faiss-cpu
+requests
+python-multipart

@@ -1,0 +1,197 @@
+{
+  "test_cases": [
+    {
+      "name": "Oily Skin with Acne",
+      "summary": {
+        "skin_type": "oily",
+        "problem": "acne",
+        "budget": "medium",
+        "age": "25",
+        "gender": "female"
+      },
+      "expected": "Should recommend Niacinamide Serum or similar acne products"
+    },
+    {
+      "name": "Dry Skin Hydration",
+      "summary": {
+        "skin_type": "dry",
+        "problem": "hydration",
+        "budget": "medium"
+      },
+      "expected": "Should recommend Hyaluronic Acid Serum or moisturizers"
+    },
+    {
+      "name": "Anti-Aging for Mature Skin",
+      "summary": {
+        "skin_type": "normal",
+        "problem": "wrinkles",
+        "age": "45",
+        "budget": "high"
+      },
+      "expected": "Should recommend Retinol or anti-aging serums"
+    },
+    {
+      "name": "Hair Care - Curly Hair Frizz",
+      "summary": {
+        "hair_type": "curly",
+        "problem": "frizz",
+        "category": "hair_care"
+      },
+      "expected": "Should recommend curl-defining or anti-frizz products"
+    },
+    {
+      "name": "Sensitive Skin",
+      "summary": {
+        "skin_type": "sensitive",
+        "problem": "redness",
+        "budget": "medium"
+      },
+      "expected": "Should recommend gentle, soothing products"
+    },
+    {
+      "name": "Vitamin C for Brightening",
+      "summary": {
+        "problem": "dark_spots",
+        "product_type": "serum",
+        "concerns": ["brightening", "hyperpigmentation"]
+      },
+      "expected": "Should recommend Vitamin C Serum"
+    },
+    {
+      "name": "Budget Conscious - Low Budget",
+      "summary": {
+        "skin_type": "combination",
+        "budget": "low"
+      },
+      "expected": "Should recommend only low-budget products"
+    },
+    {
+      "name": "Male Skincare",
+      "summary": {
+        "gender": "male",
+        "skin_type": "oily",
+        "problem": "acne"
+      },
+      "expected": "Should recommend unisex or male-targeted products"
+    },
+    {
+      "name": "Minimal Summary - Problem Only",
+      "summary": {
+        "problem": "acne"
+      },
+      "expected": "Should still return relevant acne products"
+    },
+    {
+      "name": "Complex Multi-Concern",
+      "summary": {
+        "skin_type": "combination",
+        "problem": "anti_aging",
+        "concerns": ["wrinkles", "hydration", "brightening"],
+        "age": "35",
+        "budget": "high"
+      },
+      "expected": "Should recommend comprehensive anti-aging routine"
+    }
+  ],
+  
+  "language_tests": [
+    {
+      "name": "Arabic Response",
+      "summary": {
+        "skin_type": "dry",
+        "problem": "hydration"
+      },
+      "language": "ar",
+      "expected": "Response should be in Arabic with RTL text"
+    },
+    {
+      "name": "French Response",
+      "summary": {
+        "hair_type": "dry",
+        "problem": "damaged"
+      },
+      "language": "fr",
+      "expected": "Response should be in French"
+    },
+    {
+      "name": "English Default",
+      "summary": {
+        "skin_type": "oily"
+      },
+      "language": "en",
+      "expected": "Response should be in English"
+    }
+  ],
+  
+  "edge_cases": [
+    {
+      "name": "Empty Summary",
+      "summary": {},
+      "expected": "Should return popular products"
+    },
+    {
+      "name": "Invalid Skin Type",
+      "summary": {
+        "skin_type": "xyz_invalid"
+      },
+      "expected": "Should still return results, might not match skin type"
+    },
+    {
+      "name": "Very High Top K",
+      "summary": {
+        "skin_type": "oily"
+      },
+      "top_k": 10,
+      "expected": "Should be limited to max 5 by API validation"
+    },
+    {
+      "name": "Zero Top K",
+      "summary": {
+        "skin_type": "oily"
+      },
+      "top_k": 0,
+      "expected": "Should return validation error"
+    }
+  ],
+  
+  "integration_scenarios": [
+    {
+      "name": "Chat Bot Integration - Step 1",
+      "user_message": "I have oily skin",
+      "extracted_summary": {
+        "skin_type": "oily"
+      },
+      "note": "Chat system extracts skin_type from user message"
+    },
+    {
+      "name": "Chat Bot Integration - Step 2",
+      "user_message": "I'm struggling with acne",
+      "extracted_summary": {
+        "skin_type": "oily",
+        "problem": "acne"
+      },
+      "note": "Chat system adds problem to existing summary"
+    },
+    {
+      "name": "Chat Bot Integration - Step 3",
+      "user_message": "My budget is around 2500 DA",
+      "extracted_summary": {
+        "skin_type": "oily",
+        "problem": "acne",
+        "budget": "medium"
+      },
+      "note": "Chat system infers budget=medium from price"
+    },
+    {
+      "name": "Chat Bot Integration - Final",
+      "action": "Send to /recommend/summary",
+      "summary": {
+        "skin_type": "oily",
+        "problem": "acne",
+        "budget": "medium",
+        "age": "25"
+      },
+      "note": "Chat system sends complete summary to get recommendations"
+    }
+  ]
+}
