@@ -1,0 +1,310 @@
+[
+  {
+    "id": "skin-001",
+    "name": "Niacinamide Serum 10% + Zinc 1%",
+    "name_ar": "سيروم نياسيناميد 10% + زنك 1%",
+    "name_fr": "Sérum Niacinamide 10% + Zinc 1%",
+    "price": 2500,
+    "currency": "DA",
+    "category": "beauty_skincare",
+    "subcategory": "serum",
+    "tags": ["oily_skin", "acne", "sebum_control", "sensitive_safe"],
+    "skin_conditions": {
+      "suitable_for": ["oily", "combination", "acne_prone", "sensitive"],
+      "avoid_if": ["very_dry", "eczema_active"]
+    },
+    "medical_conditions": {
+      "safe_for": ["diabetes", "hypertension", "pregnancy"],
+      "avoid_if": ["niacin_allergy"],
+      "consult_doctor": []
+    },
+    "description": "Controls sebum, reduces acne, minimizes pores. Gentle formula suitable for sensitive skin.",
+    "description_ar": "يتحكم في الدهون، يقلل حب الشباب، آمن للبشرة الحساسة",
+    "description_fr": "Contrôle le sébum, réduit l'acné, sûr pour peaux sensibles",
+    "stock": 50
+  },
+  
+  {
+    "id": "supp-001",
+    "name": "Sugar-Free Multivitamin for Diabetics",
+    "name_ar": "فيتامينات متعددة خالية من السكر لمرضى السكري",
+    "name_fr": "Multivitamines sans sucre pour diabétiques",
+    "price": 3500,
+    "currency": "DA",
+    "category": "health_supplements",
+    "subcategory": "multivitamins",
+    "tags": ["sugar_free", "diabetic_friendly", "immunity", "energy"],
+    "medical_conditions": {
+      "safe_for": ["diabetes_type1", "diabetes_type2", "pre_diabetes"],
+      "beneficial_for": ["anemia", "low_energy", "immune_deficiency"],
+      "avoid_if": ["kidney_disease_severe"],
+      "consult_doctor": ["on_blood_thinners", "kidney_disease"]
+    },
+    "nutritional_info": {
+      "sugar_content": 0,
+      "calories": 5,
+      "key_nutrients": ["vitamin_B12", "iron", "vitamin_D", "zinc"]
+    },
+    "description": "Complete multivitamin formulated for diabetics. Sugar-free, supports energy and immunity. Contains iron for anemia.",
+    "description_ar": "فيتامينات شاملة لمرضى السكري، خالية من السكر، تحتوي على الحديد",
+    "description_fr": "Multivitamines complètes pour diabétiques, sans sucre, contient du fer",
+    "stock": 80
+  },
+  
+  {
+    "id": "supp-002",
+    "name": "Iron + Vitamin C Supplement (Low Sugar)",
+    "name_ar": "مكمل الحديد + فيتامين سي (قليل السكر)",
+    "name_fr": "Supplément Fer + Vitamine C (Faible en sucre)",
+    "price": 2200,
+    "currency": "DA",
+    "category": "health_supplements",
+    "subcategory": "vitamins",
+    "tags": ["anemia", "iron_deficiency", "low_sugar", "energy_boost"],
+    "medical_conditions": {
+      "safe_for": ["diabetes", "pregnancy", "vegetarian"],
+      "beneficial_for": ["anemia", "iron_deficiency", "fatigue"],
+      "avoid_if": ["hemochromatosis", "iron_overload"],
+      "consult_doctor": ["thalassemia", "on_antibiotics"]
+    },
+    "nutritional_info": {
+      "sugar_content": 0.5,
+      "calories": 8,
+      "key_nutrients": ["iron_18mg", "vitamin_C_100mg"]
+    },
+    "description": "Treats anemia with enhanced absorption. Very low sugar, safe for diabetics. Vitamin C boosts iron absorption.",
+    "description_ar": "يعالج فقر الدم، قليل السكر، آمن لمرضى السكري",
+    "description_fr": "Traite l'anémie, faible en sucre, sûr pour diabétiques",
+    "stock": 60
+  },
+  
+  {
+    "id": "sport-001",
+    "name": "Breathable Running Shoes - Wide Fit",
+    "name_ar": "أحذية رياضية مسامية - مقاس واسع",
+    "name_fr": "Chaussures de course respirantes - Coupe large",
+    "price": 8500,
+    "currency": "DA",
+    "category": "sportswear",
+    "subcategory": "footwear",
+    "tags": ["running", "wide_fit", "diabetic_friendly", "breathable", "cushioned"],
+    "sizing": {
+      "sizes": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "width": "wide",
+      "arch_support": "high"
+    },
+    "medical_conditions": {
+      "safe_for": ["diabetes", "plantar_fasciitis", "flat_feet"],
+      "beneficial_for": ["diabetic_neuropathy", "foot_pain"],
+      "features": ["extra_cushioning", "seamless_interior", "breathable_mesh"]
+    },
+    "description": "Wide-fit running shoes with extra cushioning. Ideal for diabetics - seamless interior prevents blisters.",
+    "description_ar": "أحذية رياضية واسعة مبطنة، مثالية لمرضى السكري",
+    "description_fr": "Chaussures larges avec amorti extra, idéales pour diabétiques",
+    "stock": 25
+  },
+  
+  {
+    "id": "baby-001",
+    "name": "Organic Baby Lotion - Fragrance Free",
+    "name_ar": "لوشن أطفال عضوي - خالي من العطور",
+    "name_fr": "Lotion bébé bio - Sans parfum",
+    "price": 1800,
+    "currency": "DA",
+    "category": "baby_care",
+    "subcategory": "skincare",
+    "tags": ["organic", "fragrance_free", "hypoallergenic", "eczema_safe", "newborn_safe"],
+    "age_suitability": {
+      "minimum_age": "0_months",
+      "maximum_age": "36_months"
+    },
+    "skin_conditions": {
+      "suitable_for": ["sensitive", "eczema_prone", "very_dry", "normal"],
+      "avoid_if": []
+    },
+    "medical_conditions": {
+      "safe_for": ["eczema", "dermatitis", "allergies"],
+      "certified": ["hypoallergenic", "dermatologist_tested", "pediatrician_approved"]
+    },
+    "description": "Organic, fragrance-free baby lotion. Safe for eczema-prone and sensitive skin. Newborn approved.",
+    "description_ar": "لوشن أطفال عضوي، آمن للإكزيما والبشرة الحساسة",
+    "description_fr": "Lotion bio, sûre pour eczéma et peau sensible",
+    "stock": 45
+  },
+  
+  {
+    "id": "baby-002",
+    "name": "Zinc Oxide Diaper Cream (Maximum Strength)",
+    "name_ar": "كريم الحفاضات بأكسيد الزنك (قوة قصوى)",
+    "name_fr": "Crème pour couches à l'oxyde de zinc (Force maximale)",
+    "price": 1500,
+    "currency": "DA",
+    "category": "baby_care",
+    "subcategory": "diaper_care",
+    "tags": ["diaper_rash", "zinc_oxide", "protective", "healing"],
+    "age_suitability": {
+      "minimum_age": "0_months",
+      "maximum_age": "36_months"
+    },
+    "medical_conditions": {
+      "safe_for": ["diaper_rash", "sensitive_skin", "eczema"],
+      "beneficial_for": ["severe_diaper_rash", "chafing"],
+      "certified": ["pediatrician_recommended"]
+    },
+    "description": "Maximum strength zinc oxide cream. Treats and prevents severe diaper rash. Creates protective barrier.",
+    "description_ar": "كريم زنك قوي لعلاج والوقاية من التسلخات الشديدة",
+    "description_fr": "Crème zinc force maximale, traite et prévient l'érythème fessier",
+    "stock": 70
+  },
+  
+  {
+    "id": "health-001",
+    "name": "Blood Glucose Monitor Kit with Test Strips",
+    "name_ar": "جهاز قياس السكر في الدم مع شرائط الاختبار",
+    "name_fr": "Kit glucomètre avec bandelettes de test",
+    "price": 4500,
+    "currency": "DA",
+    "category": "healthcare_devices",
+    "subcategory": "monitoring_devices",
+    "tags": ["diabetes_management", "glucose_monitor", "blood_sugar", "home_testing"],
+    "medical_conditions": {
+      "essential_for": ["diabetes_type1", "diabetes_type2", "pre_diabetes"],
+      "beneficial_for": ["gestational_diabetes", "metabolic_syndrome"],
+      "certified": ["medical_grade", "clinically_accurate"]
+    },
+    "kit_contents": {
+      "includes": ["monitor", "lancing_device", "50_test_strips", "lancets", "carrying_case"],
+      "test_strips_included": 50
+    },
+    "description": "Accurate blood glucose monitoring system. Includes 50 test strips. Medical-grade accuracy for diabetes management.",
+    "description_ar": "جهاز قياس دقيق للسكر، يشمل 50 شريط اختبار",
+    "description_fr": "Système de surveillance précis du glucose, inclut 50 bandelettes",
+    "stock": 30
+  },
+  
+  {
+    "id": "health-002",
+    "name": "Compression Socks for Diabetics (Graduated)",
+    "name_ar": "جوارب ضاغطة لمرضى السكري (متدرجة)",
+    "name_fr": "Chaussettes de compression pour diabétiques (Graduée)",
+    "price": 2800,
+    "currency": "DA",
+    "category": "healthcare_devices",
+    "subcategory": "diabetic_supplies",
+    "tags": ["diabetic_socks", "circulation", "compression", "seamless"],
+    "sizing": {
+      "sizes": ["S", "M", "L", "XL"],
+      "compression_level": "15-20_mmHg"
+    },
+    "medical_conditions": {
+      "safe_for": ["diabetes", "poor_circulation", "varicose_veins"],
+      "beneficial_for": ["diabetic_neuropathy", "edema", "leg_swelling"],
+      "avoid_if": ["severe_arterial_disease"],
+      "consult_doctor": ["peripheral_artery_disease"]
+    },
+    "description": "Graduated compression socks designed for diabetics. Improves circulation, seamless toe, non-binding top.",
+    "description_ar": "جوارب ضاغطة طبية لمرضى السكري، تحسن الدورة الدموية",
+    "description_fr": "Chaussettes compression médicales pour diabétiques, améliore circulation",
+    "stock": 40
+  },
+  
+  {
+    "id": "mom-001",
+    "name": "Prenatal DHA + Folic Acid (Sugar-Free)",
+    "name_ar": "فيتامينات ما قبل الولادة مع DHA + حمض الفوليك (خالي من السكر)",
+    "name_fr": "DHA prénatal + Acide folique (Sans sucre)",
+    "price": 4200,
+    "currency": "DA",
+    "category": "maternal_health",
+    "subcategory": "prenatal_vitamins",
+    "tags": ["pregnancy", "prenatal", "DHA", "folic_acid", "sugar_free"],
+    "medical_conditions": {
+      "essential_for": ["pregnancy", "trying_to_conceive"],
+      "safe_for": ["gestational_diabetes", "diabetes"],
+      "beneficial_for": ["anemia_during_pregnancy", "neural_tube_defect_prevention"],
+      "consult_doctor": ["fish_allergy"]
+    },
+    "nutritional_info": {
+      "sugar_content": 0,
+      "key_nutrients": ["folic_acid_800mcg", "DHA_200mg", "iron_27mg", "calcium", "vitamin_D"]
+    },
+    "description": "Complete prenatal vitamin for pregnant women. Sugar-free, safe for gestational diabetes. Contains DHA, folic acid, iron.",
+    "description_ar": "فيتامينات شاملة للحوامل، خالية من السكر، آمنة لسكري الحمل",
+    "description_fr": "Vitamines prénatales complètes, sans sucre, sûres pour diabète gestationnel",
+    "stock": 55
+  },
+  
+  {
+    "id": "mom-002",
+    "name": "Nursing Bra - Seamless & Supportive",
+    "name_ar": "حمالة صدر للرضاعة - سلسة وداعمة",
+    "name_fr": "Soutien-gorge d'allaitement - Sans couture et de soutien",
+    "price": 3200,
+    "currency": "DA",
+    "category": "maternal_health",
+    "subcategory": "nursing_essentials",
+    "tags": ["nursing", "breastfeeding", "comfort", "seamless", "supportive"],
+    "sizing": {
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "adjustable": true,
+      "wire_free": true
+    },
+    "skin_conditions": {
+      "suitable_for": ["sensitive", "irritated", "normal"],
+      "features": ["seamless", "soft_cotton", "breathable", "wire_free"]
+    },
+    "description": "Comfortable seamless nursing bra. Wire-free, supportive, easy-access for breastfeeding. Soft cotton for sensitive skin.",
+    "description_ar": "حمالة صدر مريحة للرضاعة، بدون أسلاك، قطن ناعم",
+    "description_fr": "Soutien-gorge d'allaitement confortable, sans armature, coton doux",
+    "stock": 35
+  },
+  
+  {
+    "id": "skin-002",
+    "name": "Fragrance-Free Moisturizer for Dry Sensitive Skin",
+    "name_ar": "مرطب خالي من العطور للبشرة الجافة الحساسة",
+    "name_fr": "Hydratant sans parfum pour peau sèche et sensible",
+    "price": 2800,
+    "currency": "DA",
+    "category": "beauty_skincare",
+    "subcategory": "moisturizer",
+    "tags": ["dry_skin", "sensitive_skin", "fragrance_free", "eczema_safe", "hypoallergenic"],
+    "skin_conditions": {
+      "suitable_for": ["dry", "very_dry", "sensitive", "eczema_prone"],
+      "avoid_if": ["oily", "acne_active"]
+    },
+    "medical_conditions": {
+      "safe_for": ["eczema", "psoriasis", "rosacea", "pregnancy"],
+      "certified": ["dermatologist_tested", "hypoallergenic"]
+    },
+    "description": "Rich moisturizer for dry, sensitive skin. Fragrance-free, hypoallergenic. Safe for eczema and rosacea.",
+    "description_ar": "مرطب غني للبشرة الجافة الحساسة، آمن للإكزيما",
+    "description_fr": "Hydratant riche pour peau sèche sensible, sûr pour eczéma",
+    "stock": 60
+  },
+  
+  {
+    "id": "sport-002",
+    "name": "Moisture-Wicking Athletic Shorts",
+    "name_ar": "شورت رياضي ماص للرطوبة",
+    "name_fr": "Short athlétique évacuant l'humidité",
+    "price": 3500,
+    "currency": "DA",
+    "category": "sportswear",
+    "subcategory": "activewear",
+    "tags": ["moisture_wicking", "breathable", "comfortable", "chafing_resistant"],
+    "sizing": {
+      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "gender": "unisex"
+    },
+    "medical_conditions": {
+      "safe_for": ["diabetes", "sensitive_skin", "fungal_infection_prone"],
+      "beneficial_for": ["prevents_chafing", "reduces_moisture"],
+      "features": ["antimicrobial", "flat_seams", "quick_dry"]
+    },
+    "description": "Moisture-wicking athletic shorts. Antimicrobial, prevents chafing and fungal infections. Ideal for diabetics.",
+    "description_ar": "شورت رياضي ماص للرطوبة، مضاد للميكروبات",
+    "description_fr": "Short athlétique évacuant l'humidité, antimicrobien",
+    "stock": 45
+  }
+]

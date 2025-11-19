@@ -24,16 +24,16 @@ templates = Jinja2Templates(directory="templates")
 
 class RecommendRequest(BaseModel):
     """Request model for intelligent multi-category recommendations"""
-    category: Optional[str] = Field(None, description="Product category: beauty_skincare, health_supplements, sportswear, baby_care, maternal_health, healthcare_devices")
-    needs: Optional[List[str]] = Field(None, description="What user needs: energy, immunity, comfort, hydration, etc.")
-    skin_conditions: Optional[List[str]] = Field(None, description="Skin conditions: dry, sensitive, oily, eczema_prone, combination, etc.")
-    medical_conditions: Optional[List[str]] = Field(None, description="Medical conditions: diabetes, anemia, hypertension, pregnancy, eczema, etc.")
+    category: Optional[str] = Field(None, description="Product category: beauty_skincare, health_supplements, sportswear, baby_care, etc.")
+    needs: Optional[List[str]] = Field(None, description="What user needs: energy, immunity, comfort, etc.")
+    skin_conditions: Optional[List[str]] = Field(None, description="Skin conditions: dry, sensitive, oily, eczema_prone, etc.")
+    medical_conditions: Optional[List[str]] = Field(None, description="Medical conditions: diabetes, anemia, hypertension, pregnancy, etc.")
     avoid: Optional[List[str]] = Field(None, description="Things to avoid: sugar, fragrance, allergens, etc.")
     budget: Optional[Any] = Field(None, description="Budget: numeric (5000) or categorical (low/medium/high)")
-    age: Optional[str] = Field(None, description="Age: newborn, 0-6months, 25, 40+, etc.")
-    preferences: Optional[List[str]] = Field(None, description="Preferences: organic, fragrance_free, vegan, hypoallergenic, etc.")
-    query: Optional[str] = Field(None, description="Natural language query: 'I need vitamins but I'm diabetic and have anemia'")
-    top_k: Optional[int] = Field(default=5, ge=1, le=10, description="Number of recommendations (1-10)")
+    age: Optional[str] = Field(None, description="Age: newborn, 25, 40+, etc.")
+    preferences: Optional[List[str]] = Field(None, description="Preferences: organic, fragrance_free, vegan, etc.")
+    query: Optional[str] = Field(None, description="Natural language query")
+    top_k: Optional[int] = Field(default=5, ge=1, le=10, description="Number of recommendations")
     language: Optional[str] = Field(default='en', description="Response language: en, ar, fr")
 
 @app.post('/recommend')
@@ -41,24 +41,15 @@ def recommend(req: RecommendRequest):
     """
     Intelligent multi-category product recommendation endpoint
     
-    Handles complex user situations across multiple categories:
-    - Beauty & Skincare
-    - Health Supplements
-    - Sportswear
-    - Baby Care
-    - Maternal Health
-    - Healthcare Devices
-    
-    Examples of complex situations:
-    1. "I have diabetes and anemia, need vitamins without sugar"
-    2. "Dry but sensitive skin, looking for fragrance-free moisturizer"
-    3. "Need running shoes for diabetic feet with neuropathy"
-    4. "Baby lotion for eczema-prone sensitive skin"
-    5. "Pregnant with gestational diabetes, need prenatal vitamins"
+    Handles complex user situations like:
+    - "I have diabetes and anemia, need vitamins without sugar"
+    - "Dry but sensitive skin, looking for fragrance-free moisturizer"
+    - "Need running shoes for diabetic feet"
+    - "Baby lotion for eczema-prone skin"
     
     Request body examples:
     
-    Example 1 - Health supplements for diabetic with anemia:
+    1. Health supplements for diabetic with anemia:
     {
         "category": "health_supplements",
         "medical_conditions": ["diabetes", "anemia"],
@@ -68,7 +59,7 @@ def recommend(req: RecommendRequest):
         "top_k": 3
     }
     
-    Example 2 - Skincare for dry, sensitive skin:
+    2. Skincare for dry, sensitive skin:
     {
         "category": "beauty_skincare",
         "skin_conditions": ["dry", "sensitive"],
@@ -78,22 +69,13 @@ def recommend(req: RecommendRequest):
         "top_k": 3
     }
     
-    Example 3 - Natural language query:
+    3. Natural language query:
     {
-        "query": "I need vitamins but I'm diabetic and have anemia, no sugar please",
+        "query": "I need vitamins but I'm diabetic and have anemia",
         "top_k": 5
     }
     
-    Example 4 - Baby care for eczema:
-    {
-        "category": "baby_care",
-        "skin_conditions": ["eczema_prone", "sensitive"],
-        "age": "newborn",
-        "preferences": ["organic", "fragrance_free"],
-        "top_k": 3
-    }
-    
-    Response format:
+    Response:
     {
         "recommendations": [
             {
@@ -102,36 +84,24 @@ def recommend(req: RecommendRequest):
                 "price": 3500,
                 "currency": "DA",
                 "category": "health_supplements",
-                "subcategory": "multivitamins",
-                "tags": ["sugar_free", "diabetic_friendly", "iron"],
+                "tags": ["sugar_free", "diabetic_friendly"],
                 "description": "Complete multivitamin formulated for diabetics...",
-                "reason": "✅ Safe for diabetes, anemia • 💊 Beneficial for anemia • ⭐ Features: sugar_free",
+                "reason": "✅ Safe for diabetes, anemia • 💊 Beneficial for anemia...",
                 "score": 1.245,
-                "stock": 80,
                 "safety_notes": ["⚕️ Consult doctor if on blood thinners"]
             }
         ],
-        "count": 3,
+        "count": 1,
         "metadata": {
-            "warnings": [
-                {
-                    "type": "medical_consultation",
-                    "severity": "medium",
-                    "product": "Product Name",
-                    "message": "⚕️ Consult doctor: kidney_disease"
-                }
-            ],
-            "safety_info": [],
-            "constraints_applied": ["medical_safety", "ingredient_avoidance", "budget"],
+            "warnings": [...],
+            "safety_info": [...],
+            "constraints_applied": ["medical_safety", "ingredient_avoidance"],
             "filtered_out": {
                 "medical_safety": 2,
                 "skin_incompatibility": 0,
-                "budget": 1,
-                "out_of_stock": 0,
-                "category_mismatch": 5
+                "budget": 1
             }
-        },
-        "language": "en"
+        }
     }
     """
     try:
@@ -147,7 +117,7 @@ def recommend(req: RecommendRequest):
             user_request['medical_conditions'] = req.medical_conditions
         if req.avoid:
             user_request['avoid'] = req.avoid
-        if req.budget is not None:
+        if req.budget:
             user_request['budget'] = req.budget
         if req.age:
             user_request['age'] = req.age
@@ -163,12 +133,24 @@ def recommend(req: RecommendRequest):
             language=req.language
         )
         
-        # Return result (already includes recommendations, count, metadata, language)
-        return result
+        # Handle no results
+        if not recommendations:
+            return {
+                "recommendations": [],
+                "count": 0,
+                "language": req.language,
+                "metadata": metadata,
+                "message": "No matching products found. Please try different criteria."
+            }
+        
+        return {
+            "recommendations": recommendations,
+            "count": len(recommendations),
+            "language": req.language,
+            "metadata": metadata
+        }
     
     except Exception as e:
-        import traceback
-        traceback.print_exc()
         raise HTTPException(
             status_code=500, 
             detail=f"Error generating recommendations: {str(e)}"
@@ -176,46 +158,40 @@ def recommend(req: RecommendRequest):
 
 @app.get('/products')
 def get_products():
-    """Get all products in catalog"""
-    return recommender.products
+    """Get all beauty & health products"""
+    return beauty_recommender.get_products()
 
 @app.get('/categories')
 def get_categories():
-    """Get all available categories and subcategories"""
+    """Get all product categories"""
     categories = {}
-    for product in recommender.products:
-        cat = product.get('category')
-        subcat = product.get('subcategory')
-        if cat:
-            if cat not in categories:
-                categories[cat] = set()
-            if subcat:
-                categories[cat].add(subcat)
+    for product in beauty_recommender.products:
+        cat = product.get('category', 'other')
+        subcat = product.get('subcategory', 'other')
+        if cat not in categories:
+            categories[cat] = set()
+        categories[cat].add(subcat)
     
     # Convert sets to lists for JSON serialization
-    return {k: sorted(list(v)) for k, v in categories.items()}
+    return {cat: list(subcats) for cat, subcats in categories.items()}
 
 @app.get("/", response_class=HTMLResponse)
 def index(request: Request):
-    """Serve web UI"""
     return templates.TemplateResponse("index.html", {"request": request})
 
 @app.get("/stats")
 def get_stats():
-    """Get system statistics"""
-    return recommender.get_stats()
+    """Get recommendation system statistics"""
+    return beauty_recommender.get_stats()
 
 @app.get('/health')
 def health_check():
     """Health check endpoint"""
-    stats = recommender.get_stats()
     return {
         "status": "healthy",
-        "service": "Intelligent Multi-Category Recommendation System",
-        "version": "3.0",
-        "products_loaded": stats['total_products'],
-        "categories": len(stats['categories']),
-        "categories_list": list(stats['categories'].keys())
+        "service": "Beauty & Health Recommendation System",
+        "products_loaded": len(beauty_recommender.products),
+        "categories": len(set(p.get('category') for p in beauty_recommender.products))
     }
 
 if __name__ == "__main__":
