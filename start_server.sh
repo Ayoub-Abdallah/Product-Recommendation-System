@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Beauty Recommendation API Startup Script
+# Intelligent Multi-Category Recommendation System - Startup Script
 
 echo "=========================================="
-echo "Beauty Recommendation API"
+echo "🌟 Intelligent Recommendation System v3.0"
 echo "=========================================="
 echo ""
 
@@ -31,11 +31,11 @@ else
     echo "✅ Dependencies already installed"
 fi
 
-# Check if beauty products file exists
-if [ ! -f "data/beauty_products.json" ]; then
+# Check if products catalog exists
+if [ ! -f "data/products_catalog.json" ]; then
     echo ""
-    echo "⚠️  WARNING: data/beauty_products.json not found!"
-    echo "   Beauty recommender will not be available."
+    echo "⚠️  WARNING: data/products_catalog.json not found!"
+    echo "   Intelligent recommender will not be available."
     echo "   Please make sure the file exists before starting."
     read -p "Continue anyway? (y/n): " continue
     if [ "$continue" != "y" ]; then
@@ -43,7 +43,7 @@ if [ ! -f "data/beauty_products.json" ]; then
         exit 1
     fi
 else
-    echo "✅ Beauty products file found"
+    echo "✅ Products catalog found (multi-category)"
 fi
 
 # Start the server

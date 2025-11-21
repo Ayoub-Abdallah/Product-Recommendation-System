@@ -208,6 +208,60 @@ Transformed recommendation system that handles **complex user situations** acros
 }
 ```
 
+### GET /product/{product_id}
+
+**Get a specific product by ID**
+
+```bash
+curl http://localhost:4708/product/supp-001
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "product": {
+    "id": "supp-001",
+    "name": "Sugar-Free Multivitamin for Diabetics",
+    "price": 3500,
+    "currency": "DA",
+    "category": "health_supplements",
+    "tags": ["sugar_free", "diabetic_friendly"],
+    ...
+  }
+}
+```
+
+### GET /product/search/{search_term}
+
+**Search products by name, tags, or description (case-insensitive)**
+
+```bash
+curl http://localhost:4708/product/search/vitamin
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "search_term": "vitamin",
+  "count": 3,
+  "products": [
+    {
+      "id": "supp-001",
+      "name": "Sugar-Free Multivitamin for Diabetics",
+      ...
+    }
+  ]
+}
+```
+
+**Features:**
+- ✅ Case-insensitive search
+- ✅ Partial name matching
+- ✅ Searches in all languages (EN, AR, FR)
+- ✅ Searches in tags, descriptions, and categories
+
 ---
 
 ## 📋 Examples

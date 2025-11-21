@@ -8,6 +8,7 @@ from fastapi import Request
 from typing import Optional, List, Dict, Any
 import json
 import os
+from datetime import datetime
 
 app = FastAPI(title="Intelligent Multi-Category Recommendation System", version="3.0")
 
@@ -134,6 +135,26 @@ def recommend(req: RecommendRequest):
         "language": "en"
     }
     """
+    # Log the incoming request
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print("\n" + "="*80)
+    print(f"📥 INCOMING API CALL - {timestamp}")
+    print("="*80)
+    print(f"Endpoint: POST /recommend")
+    print(f"Request Data:")
+    print(f"  - Category: {req.category}")
+    print(f"  - Needs: {req.needs}")
+    print(f"  - Skin Conditions: {req.skin_conditions}")
+    print(f"  - Medical Conditions: {req.medical_conditions}")
+    print(f"  - Avoid: {req.avoid}")
+    print(f"  - Budget: {req.budget}")
+    print(f"  - Age: {req.age}")
+    print(f"  - Preferences: {req.preferences}")
+    print(f"  - Query: {req.query}")
+    print(f"  - Top K: {req.top_k}")
+    print(f"  - Language: {req.language}")
+    print("="*80)
+    
     try:
         # Build user request dict
         user_request = {}
@@ -163,10 +184,16 @@ def recommend(req: RecommendRequest):
             language=req.language
         )
         
+        # Log the response
+        print(f"\n✅ RESPONSE: {result['count']} recommendations returned")
+        print("="*80 + "\n")
+        
         # Return result (already includes recommendations, count, metadata, language)
         return result
     
     except Exception as e:
+        print(f"\n❌ ERROR: {str(e)}")
+        print("="*80 + "\n")
         import traceback
         traceback.print_exc()
         raise HTTPException(
@@ -178,6 +205,151 @@ def recommend(req: RecommendRequest):
 def get_products():
     """Get all products in catalog"""
     return recommender.products
+
+@app.get('/product/search/{search_term}')
+def search_products_by_name(search_term: str):
+    """
+    Search for products by name (partial match, case-insensitive)
+    
+    Args:
+        search_term: Product name or partial name to search
+    
+    Returns:
+        List of matching products
+        
+    Example:
+        GET /product/search/vitamin
+        
+    Response:
+        {
+            "success": true,
+            "count": 2,
+            "search_term": "vitamin",
+            "products": [...]
+        }
+    """
+    # Log the incoming request
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print("\n" + "="*80)
+    print(f"📥 INCOMING API CALL - {timestamp}")
+    print("="*80)
+    print(f"Endpoint: GET /product/search/{search_term}")
+    print(f"Search Term: {search_term}")
+    print("="*80)
+    
+    try:
+        search_lower = search_term.lower()
+        
+        # Search in multiple fields
+        matching_products = []
+        for p in recommender.products:
+            # Check name (all languages)
+            if (search_lower in p.get('name', '').lower() or
+                search_lower in p.get('name_ar', '').lower() or
+                search_lower in p.get('name_fr', '').lower() or
+                # Check description
+                search_lower in p.get('description', '').lower() or
+                # Check tags
+                any(search_lower in tag.lower() for tag in p.get('tags', [])) or
+                # Check category
+                search_lower in p.get('category', '').lower() or
+                search_lower in p.get('subcategory', '').lower()):
+                matching_products.append(p)
+        
+        if not matching_products:
+            print(f"\n⚠️  RESPONSE: No products found matching '{search_term}'")
+            print("="*80 + "\n")
+            return {
+                "success": False,
+                "message": f"No products found matching '{search_term}'",
+                "search_term": search_term,
+                "count": 0,
+                "products": []
+            }
+        
+        print(f"\n✅ RESPONSE: {len(matching_products)} products found matching '{search_term}'")
+        print("="*80 + "\n")
+        return {
+            "success": True,
+            "search_term": search_term,
+            "count": len(matching_products),
+            "products": matching_products
+        }
+    
+    except Exception as e:
+        print(f"\n❌ ERROR: {str(e)}")
+        print("="*80 + "\n")
+        raise HTTPException(
+            status_code=500, 
+            detail=f"Error searching products: {str(e)}"
+        )
+
+@app.get('/product/{product_id}')
+def get_product_by_id(product_id: str):
+    """
+    Get a specific product by its ID
+    
+    Args:
+        product_id: The unique product ID to lookup
+    
+    Returns:
+        Product details with full information
+        
+    Example:
+        GET /product/supp-001
+        
+    Response:
+        {
+            "success": true,
+            "product": {
+                "id": "supp-001",
+                "name": "Sugar-Free Multivitamin for Diabetics",
+                "price": 3500,
+                "currency": "DA",
+                ...
+            }
+        }
+    """
+    # Log the incoming request
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print("\n" + "="*80)
+    print(f"📥 INCOMING API CALL - {timestamp}")
+    print("="*80)
+    print(f"Endpoint: GET /product/{product_id}")
+    print(f"Product ID: {product_id}")
+    print("="*80)
+    
+    try:
+        # Search for product by ID (case-insensitive)
+        product = next(
+            (p for p in recommender.products if p.get('id', '').lower() == product_id.lower()), 
+            None
+        )
+        
+        if not product:
+            print(f"\n⚠️  RESPONSE: Product with ID '{product_id}' not found (404)")
+            print("="*80 + "\n")
+            raise HTTPException(
+                status_code=404, 
+                detail=f"Product with ID '{product_id}' not found"
+            )
+        
+        print(f"\n✅ RESPONSE: Product '{product.get('name', 'N/A')}' found")
+        print("="*80 + "\n")
+        return {
+            "success": True,
+            "product": product
+        }
+    
+    except HTTPException:
+        raise
+    except Exception as e:
+        print(f"\n❌ ERROR: {str(e)}")
+        print("="*80 + "\n")
+        raise HTTPException(
+            status_code=500, 
+            detail=f"Error fetching product: {str(e)}"
+        )
 
 @app.get('/categories')
 def get_categories():
